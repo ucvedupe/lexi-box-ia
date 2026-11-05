@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LexiBox IA | Juegos</title><link rel="stylesheet" href="css/styles.css"><script src="js/vocabulary.js" defer></script><script src="js/main.js" defer></script><script src="js/games.js" defer></script></head>
+<body>
+  <!-- GRUPO 1: NAVEGACIÓN -->
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">L</span><span>LexiBox <b>IA</b><small>Aprende jugando</small></span></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button><nav class="main-nav"><a href="index.html">Inicio</a><a href="producto.html">Producto</a><a class="active" href="juegos.html">Juegos</a><a href="equipo.html">Equipo</a><a class="nav-cta" href="contacto.html">Contáctanos</a></nav></header>
+  <main>
+    <!-- GRUPO 2: CABECERA DE JUEGOS -->
+    <section class="page-hero"><span class="eyebrow">Zona de aprendizaje</span><h1>¡Es hora de <em>jugar!</em></h1><p>Ingresa directamente, elige una palabra de las tarjetas digitales o selecciona un reto mixto. Resuelve las actividades y acumula puntos para entrar al Cuadro de Honor.</p></section>
+    <!-- GRUPO 3: IDENTIFICACIÓN DEL JUGADOR -->
+    <section class="game-layout section-light">
+      <div class="game-panel">
+        <div class="game-panel-heading"><span class="game-icon">🎮</span><div><h2>Reto de vocabulario</h2><p>10 preguntas · 10 puntos por respuesta correcta</p></div></div>
+        <div id="player-entry" class="player-entry"><div id="selected-card-info" class="selected-card-info" hidden></div><label for="player-name">Nombre del participante</label><input id="player-name" type="text" maxlength="24" placeholder="Ej. Pedro" autocomplete="name"><button id="start-game" class="btn btn-primary">Comenzar reto →</button><label for="card-selector">Tarjeta para practicar</label><select id="card-selector" class="card-selector"><option value="all">Reto mixto: todas las tarjetas</option></select><small>Puedes elegir cualquier palabra de las tarjetas o practicar todas. Tu resultado se guardará en este navegador.</small></div>
+        <div id="quiz-area" hidden>
+          <div class="quiz-meta"><span id="question-count">Pregunta 1 de 10</span><span id="live-score">0 puntos</span></div><div class="progress-track"><div id="progress-bar"></div></div>
+          <h3 id="question-text" class="question-text">¿Cuál es el sinónimo de feliz?</h3><div id="answer-options" class="answer-options"></div><p id="answer-feedback" class="answer-feedback" aria-live="polite"></p>
+          <button id="next-question" class="btn btn-primary" hidden>Siguiente pregunta →</button>
+        </div>
+        <div id="game-result" class="game-result" hidden><div class="result-medal">🏆</div><span class="eyebrow">Reto completado</span><h2 id="result-title">¡Buen trabajo!</h2><p id="result-summary"></p><button id="play-again" class="btn btn-primary">Volver a jugar</button></div>
+      </div>
+      <!-- GRUPO 4: CUADRO DE HONOR -->
+      <aside class="honor-panel"><div class="honor-heading"><span>🏆</span><div><h2>Cuadro de Honor</h2><p>Los mejores puntajes de este dispositivo</p></div></div><ol id="honor-list" class="honor-list"><li class="empty-honor">¡Sé el primero en participar!</li></ol><button id="clear-scores" class="text-button" type="button">Borrar puntajes guardados</button><p class="privacy-note">Los puntajes se guardan localmente en este navegador. Para una tabla compartida entre dispositivos se necesita una base de datos.</p></aside>
+    </section>
+    <!-- GRUPO 5: MINI RETO DE PALABRAS -->
+    <section class="section"><div class="section-heading"><span class="eyebrow">Aprende con las tarjetas</span><h2>Repasa antes del reto</h2><p>Selecciona una tarjeta para estudiar su definición, sinónimos, antónimos y ejemplo. Luego responde su pregunta.</p></div><div class="study-card-grid" id="study-card-grid"></div></section>
+  </main>
+  <!-- GRUPO 6: CHATBOT Y FOOTER -->
+  <button class="chat-launcher" aria-label="Abrir asistente">✦</button><section class="chat-widget" aria-label="Asistente Lexi" hidden><div class="chat-head"><div><b>Lexi, tu asistente</b><small>Resuelve tus dudas</small></div><button class="chat-close" aria-label="Cerrar chat">×</button></div><div class="chat-messages"><div class="bot-message">¡Hola! ¿Necesitas ayuda con una palabra?</div></div><form class="chat-form"><input type="text" placeholder="Escribe tu pregunta..." aria-label="Tu pregunta" required><button>➤</button></form></section>
+  <footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">L</span><span>LexiBox <b>IA</b><small>Aprende jugando</small></span></a><p>Una forma creativa de descubrir el mundo de las palabras.</p></div><div class="footer-links"><b>Explora</b><a href="index.html">Inicio</a><a href="producto.html">Producto</a><a href="equipo.html">Equipo</a></div><div class="footer-links"><b>Contacto</b><a href="contacto.html">Escríbenos</a><span>Proyecto educativo · 2026</span></div><div class="footer-bottom">© 2026 LexiBox IA. Proyecto de emprendimiento educativo.</div></footer>
+</body></html>
